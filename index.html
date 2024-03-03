@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0ef26a9550.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="intro"><h1>Troppo stress a lavoro?</h1> <!--schermata iniziale-->
+        <button id="firstButton" onclick="mostraElemento()">Cerca qui l'offerta che fa per te!</button>
+    </div>
+  <main id="algoritmo"> <!--form di ricerca che deve apparire dopo aver cliccato il primo bottone-->
+    <div class="container">
+        <h3>Cerca tra i nostri annunci il lavoro adatto a te</h3>
+        <div>
+            <div class="form">
+                <label for="luogo">Dove vorresti lavorare?</label>
+                <input type="text" name="luogo" id="luogo" placeholder="Inserisci il luogo...">
+            </div>
+            <div class="form">
+                <label for="posizione">In quale campo?</label>
+                <input type="text" name="posizione" id="posizioneLav" placeholder="Posizione lavorativa...">
+            </div> <!--bottone che cerca i risultati e verifica che enga scritto una stringa, fa scomparire il form e cambia sfondo :D insomma fa tutto-->
+            <button id="cerca" onclick="if(verificaInput()) ricerca(), cambiaSfondo()"><i class="fa-solid fa-magnifying-glass"></i>Cerca...</button>
+        </div>
+    </div>
+  </main> <!-- sezione per il risultato della recirca-->
+  <div id="risultato">
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>

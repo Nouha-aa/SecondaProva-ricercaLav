@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(./immagini/fbi-3026206_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;  /*mi permettono di centrare l'immagine, ricorda!*/
+    background-position-y: center;
+    display: flex;
+    justify-content: center;
+}
+ /*stile dell'introduzione e poi del suo bottone*/
+#intro {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#firstButton {
+    margin-top: 20px;
+    width: 220px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(241, 229, 212, 0.5);
+    transition: transform 0.5s ease;
+}
+
+#firstButton:hover {
+    transform: scale(1.1);
+    background-color: rgb(236, 171, 81, 0.5);
+}
+
+/*dò lo stile al form ri ricerca del lavoro*/
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#algoritmo {
+    display: none;
+}
+
+/*style che parte solo se viene inserito un numero nella ricerca*/
+.bordo-rosso {
+    border: 1px solid red;
+}
+
+/*contenuto del form*/
+.container {
+    height: 300px;
+    width: 400px;
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.container:hover {
+    box-shadow: 2px 2px 5px 2px rgb(0, 0, 0, 0.2);
+}
+
+/*style del titolo, come se fosse una scritta di sfondo di una magazine*/
+.container h3 {
+    font-size: 39px;
+    height: 190px;
+    color: rgb(0, 0, 0, 0.5);
+}
+
+label {
+    font-size: 13px;
+}
+
+input {
+    height: 20px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0, 0.5);
+}
+
+/*bottone cerca del form di lavoro*/
+#cerca {
+    margin-left: 60px;
+    margin-top: 20px;
+    height: 30px;
+    width: 80px;
+    color: rgb(0, 0, 0, 0.5);
+    border-radius: 15px;
+    border-color: rgb(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+    background-color: rgb(241, 229, 212, 0.5);
+    cursor: pointer;
+}
+
+#cerca:hover {
+    background-color: rgb(236, 171, 81, 0.5);
+    transform: scale(1.1);
+}
+
+#cerca i {
+    color: black;
+    margin-right: 4px;
+}
+
+.form {
+    height: 50px;
+}
+
+/*risultato che appare solo se viene cliccato il bottone di ricerca*/
+#risultato {
+    display: none;
+    color: black;
+    background-color: rgb(241, 229, 212, 0.5);
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.2);
+    padding-right: 28px;
+}
+
+/*style del titolo e conteggio delle offerte di lavoro trovate*/
+#titoloRisultato {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+
+#lista li {
+    padding: 5px;
+    margin: 15px;
+    transition: transform 0.4s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*style del mio cuoricino :) */
+#cuore {
+    color: black;
+    transition: color 0.2s;
+    margin-right: 100px;
+    font-size: 20px;
+}
+
+#cuore:hover {
+    size: 30px;
+    color: red;
+}
+
+/*style della lista*/
+#lista li:hover {
+    background-color: rgb(236, 171, 81, 0.5);
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.2);
+    border: 1px solid rgb(241, 229, 212, 0.5);;
+    border-radius: 8px;
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+
+#lista {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    list-style-position: inside;
+}
+
+/*style del tasto indietro che riporta al 'form' di ricerca*/
+#indietro {
+    height: 40px;
+    width: 90px;
+    margin-top: 100px;
+    margin-left: 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(241, 229, 212);
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.2);
+}
+
+#indietro:hover {
+    background-color: rgb(236, 171, 81);
+    transform: scale(1.05);
+}
+
